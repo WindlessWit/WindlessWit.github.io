@@ -297,3 +297,15 @@ footer {
         gap: 1rem;
     }
 }
+
+/* Network background canvas */
+#network{
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  z-index: -1;            /* behind your content */
+  background: #0a0b10;    /* fallback if canvas fails */
+  pointer-events: none;   /* clicks pass through */
+}

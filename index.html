@@ -1,48 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name | Developer Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Your Name</h1>
-    <p>Software Developer | Web Enthusiast | Tech Explorer</p>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    <header id="header">
+        <nav>
+            <div class="logo">Zerric Stewart</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>Project Title</h3>
-      <p>Short description of what it does and what tech you used.</p>
-      <a href="#">View Code</a> | <a href="#">Live Demo</a>
-    </div>
-    <!-- Add more project-card divs as needed -->
-  </section>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Zerric Stewart</h1>
+            <p>Full Stack Developer | Creative Problem Solver</p>
+            <a href="#projects" class="cta-button">View My Work</a>
+        </div>
+    </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Write a short bio about your skills, experience, and what you're passionate about.</p>
-  </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I'm a passionate developer with a love for creating elegant solutions to complex problems. With experience in both front-end and back-end development, I bring ideas to life through code.</p>
+                <p>When I'm not coding, you can find me exploring new technologies, contributing to open source, or enjoying a good cup of coffee.</p>
+                <div class="skills">
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">HTML/CSS</span>
+                    <span class="skill-tag">Git</span>
+                </div>
+            </div>
+            <div class="about-image">
+                <div style="width: 100%; height: 400px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 4rem;">
+                    👨‍💻
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-    <p>LinkedIn: <a href="#" target="_blank">Your Profile</a></p>
-    <p>GitHub: <a href="#" target="_blank">Your GitHub</a></p>
-  </section>
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">🚀</div>
+                <div class="project-content">
+                    <h3>Project One</h3>
+                    <p>A full-stack web application built with React and Node.js featuring real-time data updates and user authentication.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Live Demo →</a>
+                        <a href="#" class="project-link">GitHub →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">💻</div>
+                <div class="project-content">
+                    <h3>Project Two</h3>
+                    <p>An interactive data visualization dashboard that helps users analyze complex datasets with beautiful charts.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Live Demo →</a>
+                        <a href="#" class="project-link">GitHub →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">🎨</div>
+                <div class="project-content">
+                    <h3>Project Three</h3>
+                    <p>A modern e-commerce platform with seamless checkout experience and admin dashboard for inventory management.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Live Demo →</a>
+                        <a href="#" class="project-link">GitHub →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>© 2025 Your Name. All rights reserved.</p>
-  </footer>
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-content">
+            <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+            <div class="contact-links">
+                <a href="mailto:zerricstewart@gmail.com" class="contact-link">
+                    📧 Email
+                </a>
+                <a href="https://github.com/WindlessWit" class="contact-link">
+                    💻 GitHub
+                </a>
+                <a href="https://linkedin.com/in/yourusername" class="contact-link">
+                    💼 LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

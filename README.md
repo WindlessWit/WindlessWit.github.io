@@ -15,7 +15,7 @@ A modern, responsive personal portfolio website built with HTML, CSS, and vanill
 
 ## 🚀 Live Demo
 
-**[View Live Website](https://yourusername.github.io)** - Hosted on GitHub Pages
+**[View Live Website](https://windlesswit.github.io/)** - Hosted on GitHub Pages
 
 ## 📁 Project Structure
 
@@ -34,29 +34,6 @@ portfolio/
 - **CSS3** - Modern styling with flexbox and grid
 - **JavaScript (ES6+)** - Interactive features and animations
 - **Intersection Observer API** - Scroll-triggered animations
-
-## 📦 Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/portfolio.git
-```
-
-2. Navigate to the project directory:
-```bash
-cd portfolio
-```
-
-3. Open `index.html` in your browser or use a local server:
-```bash
-# Using Python 3
-python -m http.server 8000
-
-# Using Node.js (if you have http-server installed)
-npx http-server
-```
-
-4. Visit `http://localhost:8000` in your browser
 
 ## ⚙️ Customization
 
@@ -115,7 +92,7 @@ git add .
 git commit -m "Update portfolio content"
 git push origin main
 ```
-3. GitHub Pages will automatically update your site at `https://yourusername.github.io`
+3. GitHub Pages will automatically update your site at `https://windlesswit.github.io`
 
 ### Setting Up GitHub Pages (if not already set up)
 
@@ -124,7 +101,7 @@ git push origin main
 3. Under "Source", select the `main` branch
 4. Select `/ (root)` as the folder
 5. Click "Save"
-6. Your site will be live at `https://yourusername.github.io`
+6. Your site will be live at `https://windlesswit.github.io`
 
 ### Alternative Deployment Options
 
@@ -141,7 +118,7 @@ git push origin main
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/portfolio/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/WindlessWit/portfolio/issues).
 
 ## 📝 License
 
@@ -151,7 +128,7 @@ This project is [MIT](LICENSE) licensed.
 
 **Your Name**
 
-- GitHub: [@yourusername](https://github.com/yourusername)
+- GitHub: [@yourusername](https://github.com/WindlessWit)
 - LinkedIn: [Your Name](https://linkedin.com/in/yourusername)
 - Email: your.email@example.com
 

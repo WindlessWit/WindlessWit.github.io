@@ -55,6 +55,46 @@ document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
 });
 
+// Theme toggle
+const themeSwitch = document.getElementById('theme-switch');
+const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+const savedTheme = localStorage.getItem('theme');
+
+const applyTheme = (mode, { persist = true } = {}) => {
+    const isDark = mode === 'dark';
+    document.body.classList.toggle('dark-theme', isDark);
+    if (themeSwitch) {
+        themeSwitch.checked = isDark;
+        themeSwitch.setAttribute('aria-checked', String(isDark));
+    }
+    if (persist) {
+        localStorage.setItem('theme', mode);
+    }
+};
+
+const getPreferredTheme = () => savedTheme || (mediaQuery.matches ? 'dark' : 'light');
+
+const initTheme = () => {
+    const initialTheme = getPreferredTheme();
+    applyTheme(initialTheme, { persist: Boolean(savedTheme) });
+
+    if (!savedTheme) {
+        mediaQuery.addEventListener('change', (event) => {
+            applyTheme(event.matches ? 'dark' : 'light', { persist: false });
+        });
+    }
+};
+
+if (themeSwitch) {
+    initTheme();
+
+    themeSwitch.addEventListener('change', (e) => {
+        applyTheme(e.target.checked ? 'dark' : 'light');
+    });
+} else {
+    initTheme();
+}
+
 // --- Network background (lightweight vanilla version) ---
 (() => {
   const canvas = document.getElementById('network');
